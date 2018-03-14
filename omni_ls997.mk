@@ -17,3 +17,4 @@ PRODUCT_MODEL := LG-LS997
 PRODUCT_NAME := omni_ls997
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
+PRODUCT_COPY_FILES += device/lge/$(PRODUCT_DEVICE)/recovery.fstab:recovery/root/etc/twrp.fstab
