@@ -1,4 +1,4 @@
-DEVICE_TREE := device/lge/us996
+DEVICE_TREE := device/lge/h990
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -32,11 +32,11 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_APPEND_DTB := true
-#TARGET_KERNEL_DEVICE_CONFIG := device_lge_us996
+#TARGET_KERNEL_DEVICE_CONFIG := device_lge_h990
 TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_us996
+TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_h990
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-us996.lz4-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-h990.lz4-dtb
 
 # Boot image
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.hardware=elsa androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive
@@ -78,7 +78,7 @@ TW_IGNORE_MISC_WIPE_DATA := true
 #TW_H_OFFSET := -35
 
 TW_CLOCK_OFFSET := -1451606400
-#US996 offset 46 years
+#us996 offset 46 years
 #H918 TW_CLOCK_OFFSET := -1385672400
 
 
