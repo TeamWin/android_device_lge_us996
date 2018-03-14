@@ -1,4 +1,4 @@
-DEVICE_TREE := device/lge/us996
+DEVICE_TREE := device/lge/h918
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -28,15 +28,13 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-#TARGET_KERNEL_SOURCE := kernel/lge/jc-msm8996
+#TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_APPEND_DTB := true
-#TARGET_KERNEL_DEVICE_CONFIG := device_lge_us996
 TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_us996
+TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_h918
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-us996.lz4-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-h918.lz4-dtb
 
 # Boot image
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.hardware=elsa androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive
@@ -68,19 +66,12 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 149
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_NTFS_3G := true
-
 TW_IGNORE_MISC_WIPE_DATA := true
 # Shift TWRP off the secondary screen
-#top
-#TW_Y_OFFSET := 35
+#TW_Y_OFFSET := 160
+#TW_H_OFFSET := -160
 
-#Bottom
-#TW_H_OFFSET := -35
-
-TW_CLOCK_OFFSET := -1451606400
-#US996 offset 46 years
-#H918 TW_CLOCK_OFFSET := -1385672400
-
+TW_CLOCK_OFFSET := -1385672400
 
 # exFAT drivers included in the kernel
 TW_NO_EXFAT_FUSE := true

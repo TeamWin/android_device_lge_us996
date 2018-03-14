@@ -1,1 +1,1 @@
-add_lunch_combo omni_us996-eng
+add_lunch_combo omni_h918-eng
