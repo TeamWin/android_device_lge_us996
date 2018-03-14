@@ -17,3 +17,4 @@ PRODUCT_MODEL := LG-H918
 PRODUCT_NAME := omni_h918
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
+PRODUCT_COPY_FILES += device/lge/$(PRODUCT_DEVICE)/recovery.fstab:recovery/root/etc/twrp.fstab
