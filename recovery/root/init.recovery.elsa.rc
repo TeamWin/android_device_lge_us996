@@ -21,6 +21,12 @@ service fixdate /sbin/ash /fixdate.sh
 	user root
 	group root
 	seclabel u:r:recovery:s0
+service datediag /sbin/ash /datediag.sh
+	oneshot
+	disabled
+	user root
+	group root
+	seclabel u:r:recovery:s0
 on boot
     # save battery by switching to interactive once booted
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
@@ -31,4 +37,6 @@ on boot
     # dim the secondary screen backlight as best as we can
     write /sys/devices/soc/900000.qcom,mdss_mdp/900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight-ex/brightness 0
     chmod 0750 /fixdate.sh
+    chmod 0750 /datediag.sh
     start fixdate
+    start datediag
