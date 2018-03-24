@@ -14,4 +14,5 @@ if [ $year -lt 2000 ]
 then
 export year=`expr $year + 46`
 date $(date +%m%d%H%M)$year
+exec /sbin/ash /fixdate.sh
 fi
