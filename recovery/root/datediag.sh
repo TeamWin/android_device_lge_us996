@@ -7,11 +7,11 @@ export datelog='/twrp-date.log'
 echo '0' `date` >$datelog
 chmod 0666 $datelog
 sleep 1
-for x in `seq 1 60`
+for x in `seq 1 90`
 do
 echo $x `date` >>$datelog
 mkdir /sdcard/TWRP
 cp $datelog /sdcard/TWRP/
-chmod a+rw /sdcard/TWRP$datelog
+chmod 0666 /sdcard/TWRP$datelog
 sleep 1
 done
