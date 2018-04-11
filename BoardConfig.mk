@@ -76,8 +76,8 @@ TW_IGNORE_MISC_WIPE_DATA := true
 
 TW_CLOCK_OFFSET := -1451606400
 
-# exFAT drivers included in the kernel
-TW_NO_EXFAT_FUSE := true
+# exFAT drivers no longer included in the kernel
+TW_NO_EXFAT_FUSE := false
 
 # No love for the wicked (device ships with M)
 TW_EXCLUDE_SUPERSU := true
