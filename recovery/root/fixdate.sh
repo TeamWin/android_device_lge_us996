@@ -10,6 +10,7 @@ done
 sleep 2
 #so now I have lineage 15.1 giving a year of 2019 with new kernel. sick of playing wackamole so forcing year to 2018 and will update for year end later
 export ryear=2018
+export day=$(expr $(date +%j) - 1)
 #export year=`date +%Y`
 #if [ $year -lt 2000 ]
 #then
@@ -19,7 +20,10 @@ export ryear=2018
 #On superv20 us996 10o I had it come up 2017 so handling this case
 if [ `date +%Y`  -ne $ryear ]
 then
-date $(date +%m%d%H%M)2018.$(date +%S)
+export time=$(date +%H%M)
+export second=$(date +%S)
+date -D '%j' -s $day
+date $(date +%m%d)$time$ryear.$second
 #echo "Did 2017 date nudge" >>/twrp-date.log
 fi
 sleep 4
