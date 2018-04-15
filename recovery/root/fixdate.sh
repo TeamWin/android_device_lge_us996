@@ -15,7 +15,7 @@ export day=$(expr $(date +%j) - 1)
 #now handle end of month
 if [ $day -eq 0 ]; then
 	export month=$(expr $(date +%m) -1)
-	case $month
+	case $month in
 		01|03|05|07|08|10|12) export day=31;;
 		02) export day=28;;
 		04|06|09|11) export day=30;;
