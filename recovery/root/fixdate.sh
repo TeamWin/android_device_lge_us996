@@ -11,7 +11,7 @@ sleep 2
 #so now I have lineage 15.1 giving a year of 2019 with new kernel. sick of playing wackamole so forcing year to 2018 and will update for year end later
 export ryear=2018
 #day is now one off
-export day=$(expr $(date +%j) - 1)
+export day=$(expr $(date +%d) - 1)
 #now handle end of month
 if [ $day -eq 0 ]; then
 	export month=$(expr $(date +%m) -1)
