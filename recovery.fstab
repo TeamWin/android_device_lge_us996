@@ -3,7 +3,7 @@
 /system		ext4	/dev/block/bootdevice/by-name/system
 /system_image	emmc	/dev/block/bootdevice/by-name/system
 /data		ext4	/dev/block/bootdevice/by-name/userdata	flags=encryptable=/dev/block/bootdevice/by-name/encrypt
-/data_image	emmc	/dev/block/bootdevice/by-name/userdata	flags=backup=1;display="Data Image including storage, do NOT backup to internal storage";
+/data_image	emmc	/dev/block/bootdevice/by-name/userdata	flags=backup=1;display="Beta:Data Image w/ storage"";
 /cache		ext4	/dev/block/bootdevice/by-name/cache
 #Added misc to fix OTAs
 /misc		emmc	/dev/block/bootdevice/by-name/misc
