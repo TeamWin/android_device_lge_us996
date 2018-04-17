@@ -3,7 +3,7 @@
 /system		ext4	/dev/block/bootdevice/by-name/system
 /system_image	emmc	/dev/block/bootdevice/by-name/system
 /data		ext4	/dev/block/bootdevice/by-name/userdata	flags=encryptable=/dev/block/bootdevice/by-name/encrypt
-/data_image	emmc	/dev/block/bootdevice/by-name/userdata	flags=backup=1;display="Beta:Data Image w/ storage"";
+/data_image	emmc	/dev/block/bootdevice/by-name/userdata	flags=backup=1;display="Beta:Data Image w/ storage";
 /cache		ext4	/dev/block/bootdevice/by-name/cache
 #Added misc to fix OTAs
 /misc		emmc	/dev/block/bootdevice/by-name/misc
@@ -16,3 +16,4 @@
 /persist	ext4	/dev/block/bootdevice/by-name/persist	flags=display="Persist";flashimg
 /external_sd	vfat	/dev/block/mmcblk0p1 /dev/block/mmcblk0	flags=storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
 /usb-otg	vfat	/dev/block/sdh1 /dev/block/sdh		flags=storage;wipeingui;removable
+/vendor		ext4	/dev/block/bootdevice/by-name/vendor	
