@@ -85,11 +85,13 @@ TW_EXCLUDE_SUPERSU := true
 # Encryption support
 TW_INCLUDE_CRYPTO := true
 # needed for Lineage encryption
-TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd hwservicemanager keymaster-3-0
-#TARGET_HW_DISK_ENCRYPTION := true
+TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
+TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
 
 TW_DEVICE_VERSION := 1
+#TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
+TARGET_RECOVERY_DEVICE_MODULES := zip kdzwriter strace
