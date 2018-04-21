@@ -85,7 +85,7 @@ TW_EXCLUDE_SUPERSU := true
 # Encryption support
 TW_INCLUDE_CRYPTO := true
 # needed for Lineage encryption
-TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
+TW_CRYPTO_USE_SYSTEM_VOLD := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
