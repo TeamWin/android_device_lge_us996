@@ -1,10 +1,8 @@
-
 on property:ro.crypto.state=encrypted
 	chmod 0750 /qseecom.sh
-	start qseecomd
+	start qseecom
 
-service qseecomd /sbin/ash /qseecom.sh
-	oneshot
+service qseecom /sbin/ash /qseecom.sh
 	disabled
 	user root
 	grouo root
@@ -20,10 +18,15 @@ service datediag /sbin/ash /datediag.sh
 	oneshot
 	disabled
 	user root
-	pgroup root
+	group root
 	seclabel u:r:recovery:s0
 
-
+service vendor /sbin/ash /vendor.sh
+	oneshot
+	disabled
+	user root
+	group root
+	seclabel u:r:recovery:s0
 on boot
     # save battery by switching to interactive once booted
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
@@ -43,5 +46,5 @@ on fs
     chown system drmrpc /dev/qseecom
     chmod 0664 /dev/ion
     chown system system /dev/ion
-
-
+	chmod 0750 /vendor.sh
+	start vendor
