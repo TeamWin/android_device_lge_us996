@@ -1,8 +1,38 @@
 [
 	{
-		"remote":"github",
-		"repository":"CyanogenMod/android_device_qcom_common",
-		"target_path":"device/qcom/common",
-		"revision":"cm-14.1"
+		"remote": "github",
+		"repository": "LineageOS/android_device_qcom_common",
+		"target_path": "device/qcom/common",
+		"revision": "lineage-15.1"
+	},
+	{
+		"remote": "github",
+		"repository": "LineageOS/android_kernel_lge_msm8996",
+		"target_path": "kernel/lge/msm8996",
+		"revision": "lineage-15.1"
+	},
+	{
+		"remote": "github",
+		"repository": "Phoenix591/android_external_zip",
+		"target_path": "external/zip",
+		"revision": "lineage-15.1"
+	},
+	{
+		"remote": "github",
+		"repository": "LineageOS/android_vendor_qcom_opensource_cryptfs_hw",
+		"target_path": "vendor/qcom/opensource/cryptfs_hw",
+		"revision": "lineage-15.1"
+	},
+	{
+		"remote": "github",
+		"repository": "Phoenix591/lg-v20-tools",
+		"target_path": "external/kdzwriter",
+		"revision": "kdzwriter"
+	},
+	{
+		"remote": "github",
+		"repository": "omnirom/android_external_busybox",
+		"target_path": "external/busybox",
+		"revision": "android-8.1"
 	}
 ]

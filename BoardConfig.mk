@@ -28,15 +28,16 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-#TARGET_KERNEL_SOURCE := kernel/lge/jc-msm8996
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_APPEND_DTB := true
-#TARGET_KERNEL_DEVICE_CONFIG := device_lge_us996
-TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_us996
+TARGET_KERNEL_DEVICE_CONFIG := device_lge_us996
+TARGET_KERNEL_CONFIG := lineageos_us996_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+#TARGET_KERNEL_DEVICE_DEFCONFIG := device_lge_us996
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-us996.lz4-dtb
+#TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image-us996.lz4-dtb
 
 # Boot image
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff androidboot.hardware=elsa androidboot.bootdevice=624000.ufshc androidboot.selinux=permissive
@@ -101,3 +102,4 @@ TWRP_INCLUDE_LOGCAT := true
 TW_DEVICE_VERSION := 3
 #TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
 TARGET_RECOVERY_DEVICE_MODULES := zip kdzwriter strace
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
