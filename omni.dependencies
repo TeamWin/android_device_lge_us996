@@ -1,8 +1,26 @@
 [
 	{
-		"remote":"github",
-		"repository":"CyanogenMod/android_device_qcom_common",
-		"target_path":"device/qcom/common",
-		"revision":"cm-14.1"
+		"remote": "github",
+		"repository": "LineageOS/android_device_qcom_common",
+		"target_path": "device/qcom/common",
+		"revision": "cm-14.1"
+	},
+	{
+		"remote": "github",
+		"repository": "LineageOS/android_vendor_qcom_opensource_cryptfs_hw",
+		"target_path": "vendor/qcom/opensource/cryptfs_hw",
+		"revision": "cm-14.1"
+       },
+	{
+		"remote": "github",
+		"repository": "Phoenix591/android_external_zip",
+		"target_path": "external/zip",
+		"revision": "lineage-15.1"
+	},
+	{
+		"remote": "github",
+		"repository": "Phoenix591/lg-v20-tools",
+		"target_path": "external/kdzwriter",
+		"revision": "kdzwriter"
 	}
 ]
