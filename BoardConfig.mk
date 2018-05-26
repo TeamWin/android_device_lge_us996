@@ -95,3 +95,4 @@ TWRP_INCLUDE_LOGCAT := true
 TW_DEVICE_VERSION := 3
 #TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
 TARGET_RECOVERY_DEVICE_MODULES := zip kdzwriter strace
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
