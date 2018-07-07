@@ -5,7 +5,7 @@ on property:ro.crypto.state=encrypted
 service qseecom /sbin/ash /qseecom.sh
 	disabled
 	user root
-	grouo root
+	group root
 	seclabel u:r:recovery:s0
 
 service fixdate /sbin/ash /fixdate.sh
