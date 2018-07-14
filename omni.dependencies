@@ -28,11 +28,5 @@
 		"repository": "Phoenix591/lg-v20-tools",
 		"target_path": "external/kdzwriter",
 		"revision": "kdzwriter"
-	},
-	{
-		"remote": "github",
-		"repository": "omnirom/android_external_busybox",
-		"target_path": "external/busybox",
-		"revision": "android-8.1"
 	}
 ]
