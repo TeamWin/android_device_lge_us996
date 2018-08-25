@@ -4,6 +4,7 @@ on property:ro.crypto.state=encrypted
 
 service qseecom /sbin/sh /sbin/qseecom.sh
 	disabled
+	oneshot
 	user root
 	group root
 	seclabel u:r:recovery:s0
